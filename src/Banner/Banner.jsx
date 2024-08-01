@@ -26,10 +26,9 @@ const Banner = () => {
                 <Button className="custom-button"  style={{ marginTop:"100px" }} >
                   BOOK A CALL
                 </Button>
-                <p className="lead mt-3" style={{ fontSize:"15px" }}>
-                  To empower brands with creativity and strategy, enabling them
-                  to reach their full potential and thrive in the competitive
-                  landscape.
+                <p className="lead mt-3 banner-description" style={{ fontSize:"15px" }}>
+                  To empower brands with creativity and strategy, enabling them to 
+                  reach their full potential and thrive in the competitive landscape.
                 </p>
               </div>
             </Col>
