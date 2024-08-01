@@ -1,19 +1,94 @@
-@font-face{
+@font-face {
     font-family: ElzaTrial-Regular;
-    src:url(../../public/ElzaTrial-Regular.otf)
-}
-
-.banner-container {
-    max-width: 100%; /* Adjust this value to shrink more or less */
-    margin: 0 auto; /* Center the container */
-    
+    src: url(../../public/ElzaTrial-Regular.otf);
+  }
+  
+  .banner-container {
+    max-width: 100%;
+    margin: 0 auto;
   }
   
   .banner-background {
     background-size: cover;
-    background-position: start;
+    background-position: center; /* Center the background image */
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .cont {
+    margin-left: 230px;
+    margin-top: 100px;
+  }
+  
+  .banner-title {
+    font-family: ElzaTrial-Regular;
+    font-weight: 400;
+    font-size: 6.3rem;
+    line-height: 0.9;
+  }
+
+  .custom-button {
+    border-radius: 50px; /* Makes the button round */
+    padding: 10px 30px; /* Adjust the padding as needed */
+    border: none; /* Remove border */
+    background-color: #E6320F; /* Set button background color */
+    color: white; /* Set text color */
+    font-weight: bold; /* Optional: Make the text bold */
     
+  }
+  .custom-button:hover {
+  background-color: #C12B0E; /* Optional: Darker shade for hover effect */
+}
+  
+  @media (max-width: 1200px) {
+    .cont {
+      margin-left: 150px; /* Adjust margin for larger screens */
+    }
+    .banner-title {
+      font-size: 5rem; /* Adjust font size for larger screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .cont {
+      margin-left: 100px; /* Adjust margin for medium screens */
+    }
+    .banner-title {
+      font-size: 4rem; /* Adjust font size for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cont {
+      margin-left: 0;
+      margin-top: 20px; /* Adjust margin for small screens */
+      text-align: center;
+    }
+    .banner-title {
+      font-size: 3.5rem; /* Adjust font size for small screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .cont {
+      margin-left: 0;
+      margin-top: 20px; /* Adjust margin for extra small screens */
+      text-align: center;
+    }
+    .banner-title {
+      font-size: 3rem; /* Adjust font size for extra small screens */
+    }
+  
+    .banner-container {
+      padding: 1rem; /* Adjust padding for extra small screens */
+    }
+  
+    .banner-background {
+      background-position: center; /* Center the background image for extra small screens */
+    }
   }
   
