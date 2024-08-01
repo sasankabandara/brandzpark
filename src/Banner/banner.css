@@ -1,0 +1,19 @@
+@font-face{
+    font-family: ElzaTrial-Regular;
+    src:url(../../public/ElzaTrial-Regular.otf)
+}
+
+.banner-container {
+    max-width: 100%; /* Adjust this value to shrink more or less */
+    margin: 0 auto; /* Center the container */
+    
+  }
+  
+  .banner-background {
+    background-size: cover;
+    background-position: start;
+    width: 100%;
+    height: 100%;
+    
+  }
+  

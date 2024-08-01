@@ -1,0 +1,17 @@
+/* nav.css */
+
+.navbar-nav {
+    flex-direction: row !important;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-nav {
+      flex-direction: column !important;
+      align-items: flex-end;
+    }
+    
+    .navbar-toggler {
+      margin-left: auto;
+    }
+  }
+  
