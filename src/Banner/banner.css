@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     text-align: left;
+    margin-top: -80px;
   }
   
   .cont {
@@ -75,8 +76,8 @@
   
   @media (max-width: 576px) {
     .cont {
-      margin-left: 90px;
-      margin-top: -250px; /* Adjust margin for extra small screens */
+      margin-left: 40px;
+      margin-top: -170px; /* Adjust margin for extra small screens */
       text-align: left;
     }
     .banner-title {
@@ -89,6 +90,7 @@
   
     .banner-background {
       background-position: center; /* Center the background image for extra small screens */
+     
     }
 
     .custom-button {

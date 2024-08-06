@@ -1,0 +1,18 @@
+.logos-container {
+    background-color: #000; /* Background color as seen in the provided image */
+    padding: 20px 0px;
+    text-align: center;
+  }
+  
+  .logo-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-img {
+    max-width: 100%;
+    height: auto;
+  }
+  

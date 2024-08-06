@@ -2,7 +2,9 @@
 
 .navbar-nav {
     flex-direction: row !important;
+    
   }
+  
   
   @media (max-width: 991px) {
     .navbar-nav {

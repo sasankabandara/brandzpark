@@ -5,7 +5,7 @@ import "../NavBar/nav.css";
 
 const NavBar = () => {
   return (
-    <Navbar expand="lg" className="bg-transparent fixed-top">
+    <Navbar expand="lg" className="bg-transparent   ">
       <Container className="mt-4">
         <Row className="w-100 align-items-center">
           <Col xs={2} lg={3} className="d-flex justify-content-start align-items-center">
