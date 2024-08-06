@@ -7,19 +7,18 @@ import logo4 from '../imgs/turner.png';
 import logo5 from '../imgs/newage.png';
 import './Logos.css';
 
-
 const Logos = () => {
-    return (
-        <Container className="logos-container">
-      <Row>
-        <Col xs={6} md={4} lg={2} className="logo-col">
-          <img src={logo1} alt="Logo1" className="logo-img" />
+  return (
+    <Container fluid className="logos-container">
+      <Row className="justify-content-center">
+        <Col xs={3} md={4} lg={2} className="logo-col">
+          <img src={logo1} alt="Logo 1" className="logo-img" />
         </Col>
         <Col xs={6} md={4} lg={2} className="logo-col">
-          <img src={logo2} alt="Logo2" className="logo-img" />
+          <img src={logo2} alt="Logo 2" className="logo-img" />
         </Col>
         <Col xs={6} md={4} lg={2} className="logo-col">
-          <img src={logo3} alt="Logo3" className="logo-img" />
+          <img src={logo3} alt="Logo 3" className="logo-img" />
         </Col>
         <Col xs={6} md={4} lg={2} className="logo-col">
           <img src={logo4} alt="Logo 4" className="logo-img" />
@@ -29,7 +28,7 @@ const Logos = () => {
         </Col>
       </Row>
     </Container>
-    );
-  };
+  );
+};
 
 export default Logos;

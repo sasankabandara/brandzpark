@@ -1,7 +1,8 @@
 .logos-container {
-    background-color: #000; /* Background color as seen in the provided image */
-    padding: 20px 0px;
+    background-color: #000; /* Background color */
+    padding: 20px 0;
     text-align: center;
+    width: 100%; /* Ensure it spans the full width */
   }
   
   .logo-col {
@@ -9,10 +10,13 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: 0px; /* Add left margin */
+    margin-right: -60px; /* Add right margin */
   }
   
   .logo-img {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
+    padding: 10px; /* Add padding if needed */
   }
   

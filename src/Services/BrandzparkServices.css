@@ -1,0 +1,30 @@
+/* BrandzparkServices.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background for the entire page */
+}
+
+.brandzpark-container {
+    background-color: #000; /* Black background as per the design */
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+}
+
+.brandzpark-header h2, .brandzpark-header p {
+    color: #fff; /* White text color */
+}
+
+.brandzpark-logo {
+    font-size: 2rem;
+    color: #ff4500; /* Bright orange color */
+}
+
+.brandzpark-card {
+    border: none;
+}
+
+.brandzpark-card .card-body h5 {
+    color: #ff4500; /* Bright orange color for titles */
+}
