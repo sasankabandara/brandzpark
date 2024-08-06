@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Banner />
     <Logos/>
-    <BrandzparkServices />
+    <BrandzparkServices/>
     </div>
   );
 }

@@ -3,22 +3,29 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './BrandzparkServices.css';
 import brandStrategy from '../imgs/brand-strategy.png'
 import creativeDesign from '../imgs/creativeDesign.png';
+import videoAnimation from '../imgs/video-animation.png'; 
+import digitalSolutions from '../imgs/digital-solutions.png';
 
 const BrandzparkServices = () => {
     return (
-        <div className="brandzpark-container  text-light my-5">
+        <div className="brandzpark-container text-light my-5">
             <div className="brandzpark-header text-center mb-4">
                 <div className="brandzpark-logo mb-2">
-                    <span className="brandzpark-icon">*</span>
+                <img
+              src="/assets/star.png"
+              height="100"
+              alt="star"
+              className="me-2"
+            />
                 </div>
                 <h2>About Brandzpark</h2>
                 <p>Our Services</p>
                 <p>Brandzpark Pvt Ltd is dedicated to uplifting brands through strategic planning, creative design, and innovative digital solutions. With years of expertise in building startups, managing businesses and providing services to various brands, We are committed to helping our clients achieve their branding goals and stand out in the market.</p>
             </div>
-            <div className="row">
+            <div className="brandzpark-row row">
                 <div className="col-md-3 col-sm-12 mb-3">
                     <div className="brandzpark-card card bg-dark text-light h-100">
-                    <img src={brandStrategy} className="card-img-top" alt="Brand strategy & Branding" />
+                        <img src={brandStrategy} className="card-img-top" alt="Brand strategy & Branding" />
                         <div className="card-body">
                             <h5 className="card-title">Brand strategy & Branding</h5>
                         </div>
@@ -41,7 +48,7 @@ const BrandzparkServices = () => {
                 </div>
                 <div className="col-md-3 col-sm-12 mb-3">
                     <div className="brandzpark-card card bg-dark text-light h-100">
-                        <img src="video-animation.jpg" className="card-img-top" alt="Video and Animation" />
+                        <img src={videoAnimation} className="card-img-top" alt="Video and Animation" />
                         <div className="card-body">
                             <h5 className="card-title">Video and Animation</h5>
                         </div>
@@ -49,7 +56,7 @@ const BrandzparkServices = () => {
                 </div>
                 <div className="col-md-3 col-sm-12 mb-3">
                     <div className="brandzpark-card card bg-dark text-light h-100">
-                        <img src="digital-solutions.jpg" className="card-img-top" alt="Digital Solutions" />
+                        <img src={digitalSolutions} className="card-img-top" alt="Digital Solutions" />
                         <div className="card-body">
                             <h5 className="card-title">Digital Solutions</h5>
                         </div>

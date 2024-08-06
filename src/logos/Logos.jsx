@@ -9,25 +9,27 @@ import './Logos.css';
 
 const Logos = () => {
   return (
-    <Container fluid className="logos-container">
-      <Row className="justify-content-center">
-        <Col xs={3} md={4} lg={2} className="logo-col">
-          <img src={logo1} alt="Logo 1" className="logo-img" />
-        </Col>
-        <Col xs={6} md={4} lg={2} className="logo-col">
-          <img src={logo2} alt="Logo 2" className="logo-img" />
-        </Col>
-        <Col xs={6} md={4} lg={2} className="logo-col">
-          <img src={logo3} alt="Logo 3" className="logo-img" />
-        </Col>
-        <Col xs={6} md={4} lg={2} className="logo-col">
-          <img src={logo4} alt="Logo 4" className="logo-img" />
-        </Col>
-        <Col xs={6} md={4} lg={2} className="logo-col">
-          <img src={logo5} alt="Logo 5" className="logo-img" />
-        </Col>
-      </Row>
-    </Container>
+    <div className="logos-container">
+      <Container>
+        <Row className="justify-content-center">
+          <Col xs={4} sm={4} md={2} className="logo-col">
+            <img src={logo1} alt="Logo 1" className="logo-img" />
+          </Col>
+          <Col xs={4} sm={4} md={2} className="logo-col">
+            <img src={logo2} alt="Logo 2" className="logo-img" />
+          </Col>
+          <Col xs={4} sm={4} md={2} className="logo-col">
+            <img src={logo3} alt="Logo 3" className="logo-img" />
+          </Col>
+          <Col xs={6} sm={4} md={2} className="logo-col">
+            <img src={logo4} alt="Logo 4" className="logo-img" />
+          </Col>
+          <Col xs={6} sm={4} md={2} className="logo-col">
+            <img src={logo5} alt="Logo 5" className="logo-img" />
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 };
 

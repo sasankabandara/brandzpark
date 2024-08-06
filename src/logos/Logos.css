@@ -1,22 +1,20 @@
 .logos-container {
-    background-color: #000; /* Background color */
-    padding: 20px 0;
-    text-align: center;
-    width: 100%; /* Ensure it spans the full width */
-  }
-  
-  .logo-col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-left: 0px; /* Add left margin */
-    margin-right: -60px; /* Add right margin */
-  }
-  
-  .logo-img {
-    max-width: 60%;
-    height: auto;
-    padding: 10px; /* Add padding if needed */
-  }
-  
+  background-color: #000; /* Background color */
+  padding: 20px 0;
+  text-align: center;
+  width: 100%; /* Ensure it spans the full width */
+}
+
+.logo-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0; /* Ensure there is no padding */
+}
+
+.logo-img {
+  max-width: 60%;
+  height: auto;
+  padding: 0; /* Ensure there is no padding */
+}
