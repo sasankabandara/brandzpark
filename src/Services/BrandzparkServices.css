@@ -24,11 +24,15 @@ html, body {
     border: none;
     margin: 0; /* Remove margin around cards */
     border-radius: 0; /* Remove rounded corners */
+    overflow: hidden; /* Hide overflow for smooth animations */
+    position: relative;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
 }
 
 .brandzpark-card .card-img-top {
-    border-top-left-radius: 0; /* Ensure image has no rounded corners */
-    border-top-right-radius: 0; /* Ensure image has no rounded corners */
+    width: 100%;
+    height: auto; /* Ensure image covers the card area */
+    object-fit: cover; /* Cover the entire area */
 }
 
 .brandzpark-card .card-body h5 {
@@ -42,5 +46,62 @@ html, body {
 
 .brandzpark-card .card-img-overlay {
     padding: 10px; /* Adjust padding as necessary */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align title to bottom when not hovered */
+    transition: background-color 0.3s ease; /* Add transition for smooth background color change */
 }
 
+.brandzpark-card .card-title {
+    margin: 0; /* Remove default margin */
+    position: absolute; /* Position absolutely */
+    bottom: 10px; /* Position title at the bottom left */
+    left: 10px; /* Position title at the bottom left */
+    z-index: 1; /* Ensure the title is above the overlay */
+    transition: all 0.3s ease; /* Add transition for smooth animations */
+}
+
+.brandzpark-card .card-img-overlay img.arrow {
+    position: absolute; /* Position absolutely in top right */
+    top: 10px; /* Position from top */
+    right: 10px; /* Position from right */
+    width: 30px; /* Set arrow size */
+    height: 30px; /* Set arrow size */
+    opacity: 0; /* Initially hide the arrow */
+    transition: all 0.3s ease; /* Add transition for smooth animations */
+}
+
+.brandzpark-card:hover .card-title {
+    bottom: auto; /* Remove bottom position */
+    top: 10px; /* Move title to the top left on hover */
+    right: auto; /* Remove right position */
+    left: 10px; /* Keep left position for top left alignment */
+}
+
+.brandzpark-card:hover .card-img-overlay {
+    justify-content: flex-start; /* Align title to top when hovered */
+    background: linear-gradient(0deg, rgba(15, 15, 15, 0.6), rgba(15, 15, 15, 0.6)), linear-gradient(180deg, rgba(230, 50, 15, 0) 0%, rgba(230, 50, 15, 0.4) 100%); /* Gradient overlay with brand colors */
+}
+
+.brandzpark-card:hover .card-img-overlay img.arrow {
+    opacity: 1; /* Show the arrow on hover */
+}
+
+@media (max-width: 767.98px) {
+    .brandzpark-row {
+        margin: 0; /* Remove margin for small screens */
+    }
+
+    .brandzpark-card .card-title {
+        font-size: 1rem; /* Adjust font size for small screens */
+    }
+
+    .brandzpark-card .card-img-overlay {
+        padding: 5px; /* Adjust padding for small screens */
+    }
+
+    .brandzpark-card .card-img-overlay img.arrow {
+        width: 20px; /* Adjust arrow size for small screens */
+        height: 20px; /* Adjust arrow size for small screens */
+    }
+}
