@@ -9,7 +9,7 @@
     background-color: #000; /* Black background as per the design */
     padding: 0px; /* Remove any padding */
     margin: 0px; /* Remove any margin */
-    width: 60%; /* Adjust width to reduce margin from sides */
+    width: 67%; /* Adjust width to reduce margin from sides */
 }
 
 .recent-works-container h2 {
@@ -19,7 +19,7 @@
 .recent-works-card-wrapper {
     position: relative;
     text-align: center;
-    max-width: 100%;
+    max-width: 1000%;
 }
 
 .recent-works-card {
@@ -29,14 +29,14 @@
     overflow: hidden; /* Hide overflow for smooth animations */
     position: relative;
     transition: transform 0.3s ease; /* Add transition for smooth scaling */
-    height: 300px; /* Adjusted height for all cards */
+    height: 450px; /* Increased height for all cards */
     background-color: #333; /* Card background color */
     width: 100%; /* Ensure full width within the column */
 }
 
 .recent-works-card .card-img-top {
     width: 100%;
-    height: 200px; /* Adjusted height for the image */
+    height: 350px; /* Increased height for the image */
     object-fit: cover; /* Cover the entire area */
 }
 
@@ -45,7 +45,7 @@
 }
 
 .recent-works-card .card-title {
-    color: #ff4500; /* Bright orange color for titles */
+    color: white; /* Bright orange color for titles */
     margin: 0; /* Remove default margin */
     text-align: center; /* Center the title text */
     font-size: 1rem; /* Adjust font size */
@@ -64,21 +64,21 @@
 
 .col-md-6, .col-sm-12 {
     max-width: 49%; /* Ensure two cards per row */
-    padding: 0 5px; /* Adjust padding to reduce space */
+    padding: 0 2px; /* Reduce padding to minimize space between columns */
     margin-bottom: 20px; /* Add margin bottom for spacing */
 }
 
 @media (max-width: 768px) {
     .col-md-6, .col-sm-12 {
-        max-width: 48%; /* Ensure two cards per row even on mobile */
-        height: 250px; /* Adjust card height on mobile */
+        max-width: 50%; /* Ensure two cards per row even on mobile */
+        height: 175px; /* Increase card height on mobile */
     }
 
     .recent-works-card {
-        height: 250px; /* Adjusted height for all cards on mobile */
+        height: 350px; /* Increased height for all cards on mobile */
     }
 
     .recent-works-card .card-img-top {
-        height: 150px; /* Adjusted height for the image on mobile */
+        height: 155px; /* Increased height for the image on mobile */
     }
 }
