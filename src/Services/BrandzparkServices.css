@@ -63,19 +63,19 @@ html, body {
 
 .brandzpark-card .card-img-overlay img.arrow {
     position: absolute; /* Position absolutely in top right */
-    top: 10px; /* Position from top */
-    right: 10px; /* Position from right */
-    width: 30px; /* Set arrow size */
-    height: 30px; /* Set arrow size */
+    top: 35px; /* Position from top */
+    right: 30px; /* Position from right */
+    width: 40px; /* Set arrow size */
+    height: 40px; /* Set arrow size */
     opacity: 0; /* Initially hide the arrow */
     transition: all 0.3s ease; /* Add transition for smooth animations */
 }
 
 .brandzpark-card:hover .card-title {
     bottom: auto; /* Remove bottom position */
-    top: 10px; /* Move title to the top left on hover */
+    top: 30px; /* Move title to the top left on hover */
     right: auto; /* Remove right position */
-    left: 10px; /* Keep left position for top left alignment */
+    left: 30px; /* Keep left position for top left alignment */
 }
 
 .brandzpark-card:hover .card-img-overlay {

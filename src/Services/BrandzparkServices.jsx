@@ -25,7 +25,7 @@ const BrandzparkServices = () => {
         </div>
         <h2>About Brandzpark</h2>
         <p>Our Services</p>
-        <p>Brandzpark Pvt Ltd is dedicated to uplifting brands through strategic planning, creative design, and innovative digital solutions. With years of expertise in building startups, managing businesses and providing services to various brands, We are committed to helping our clients achieve their branding goals and stand out in the market.</p>
+        <p>Brandzpark Pvt Ltd is dedicated to uplifting brands through strategic planning, creative design, and innovative<br/> digital solutions. With years of expertise in building startups, managing businesses and providing services to various<br/> brands, We are committed to helping our clients achieve their branding goals and stand out in the market.</p>
       </div>
       <div className="brandzpark-row row gx-0"> {/* Add gx-0 to remove gutter space */}
         <div className="col-md-3 col-12 mb-3"> {/* Add col-12 for full width on small screens */}
