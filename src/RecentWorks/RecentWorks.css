@@ -1,13 +1,3 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #000; /* Black background for the entire page */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .page-container {
     width: 100%;
     display: flex;
@@ -39,14 +29,14 @@ html, body {
     overflow: hidden; /* Hide overflow for smooth animations */
     position: relative;
     transition: transform 0.3s ease; /* Add transition for smooth scaling */
-    height: 350px; /* Increased height for all cards */
+    height: 300px; /* Adjusted height for all cards */
     background-color: #333; /* Card background color */
     width: 100%; /* Ensure full width within the column */
 }
 
 .recent-works-card .card-img-top {
     width: 100%;
-    height: 250px; /* Increased height for the image */
+    height: 200px; /* Adjusted height for the image */
     object-fit: cover; /* Cover the entire area */
 }
 
@@ -79,7 +69,16 @@ html, body {
 }
 
 @media (max-width: 768px) {
-    .col-md-6 {
-        max-width: 100%; /* One card per row on smaller screens */
+    .col-md-6, .col-sm-12 {
+        max-width: 48%; /* Ensure two cards per row even on mobile */
+        height: 250px; /* Adjust card height on mobile */
+    }
+
+    .recent-works-card {
+        height: 250px; /* Adjusted height for all cards on mobile */
+    }
+
+    .recent-works-card .card-img-top {
+        height: 150px; /* Adjusted height for the image on mobile */
     }
 }

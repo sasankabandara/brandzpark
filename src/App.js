@@ -5,7 +5,7 @@ import Feedback from "./Feedback/Feedback";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logos from "./logos/Logos";
 import BrandzparkServices from "./Services/BrandzparkServices";
-//import RecentWorks from "./RecentWorks/RecentWorks";
+import RecentWorks from "./RecentWorks/RecentWorks";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Banner />
     <Logos/>
     <BrandzparkServices/>
-
+<RecentWorks/>
     </div>
   );
 }
