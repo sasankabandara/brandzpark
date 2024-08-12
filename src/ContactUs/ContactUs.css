@@ -3,6 +3,7 @@
   background-color: #000;
   padding: 60px 0;
   color: #fff;
+  margin-left: 200px;
 }
 
 .contact-title {
@@ -79,3 +80,24 @@
 }
 
 
+@media (max-width: 768px) {
+  .contact-container {
+    margin-left: 0; /* Remove the left margin */
+    padding: 40px 20px; /* Add some padding for mobile */
+    text-align: left; /* Align text to the left */
+  }
+
+  .contact-title,
+  .story-title,
+  .details-title {
+    text-align: left; /* Ensure titles are left-aligned */
+  }
+
+  .contact-input,
+  .contact-button,
+  .say-hi,
+  .story-text,
+  .details-text {
+    text-align: left; /* Ensure all text and inputs are left-aligned */
+  }
+}

@@ -25,12 +25,12 @@ const NavBar = () => {
               />
             </Navbar.Brand>
           </Col>
-          <Col xs={2} lg={3} className="d-flex justify-content-end align-items-center">
+          <Col xs={2} lg={3} className="d-flex justify-content-end align-items-center ">
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto flex-column flex-lg-row align-items-lg-center">
-                <Nav.Link href="#about" className="text-white me-5">About</Nav.Link>
-                <Nav.Link href="#work" className="text-white me-4">Work</Nav.Link>
+                <Nav.Link href="#about" className="text-white me-sm-5">About</Nav.Link>
+                <Nav.Link href="#work" className="text-white me-5">Work</Nav.Link>
                 <Nav.Link href="#contact" className="text-white me-5">Contact</Nav.Link>
                 <img
                   src="/assets/rou.png"

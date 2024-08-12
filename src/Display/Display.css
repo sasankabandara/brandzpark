@@ -8,8 +8,8 @@
 }
 
 .overlay-image {
-    width: 80%; /* Adjust width for responsiveness */
-    max-width: 1000px; /* Limit the max width */
+    
+   
     height: auto; /* Maintain aspect ratio */
     position: absolute; /* Position absolute for overlay effect */
     top: 50%; /* Center vertically */
@@ -24,5 +24,9 @@
         top: 50%; /* Re-center vertically */
         left: 50%; /* Re-center horizontally */
         transform: translate(-50%, -50%); /* Center the image */
+    }
+
+    .image-overlay-container {
+        min-height: 20vh;
     }
 }
