@@ -1,0 +1,81 @@
+/* General Styles */
+.contact-container {
+  background-color: #000;
+  padding: 60px 0;
+  color: #fff;
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-family: 'ElzaTrial-Regular', sans-serif;
+  margin-bottom: 30px;
+}
+
+.asterisk {
+  color: #ff4500;
+  font-size: 1.5rem;
+}
+
+.contact-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+.contact-input::placeholder {
+  color: #aaa;
+}
+
+.contact-button {
+  background-color: #2f2f2f;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.contact-button:hover {
+  background-color: #ff4500;
+  color: #fff;
+}
+
+.say-hi {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+}
+
+.contact-details {
+  margin-top: 30px;
+}
+
+.story-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.story-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.details-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.details-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+

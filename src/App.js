@@ -6,6 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logos from "./logos/Logos";
 import BrandzparkServices from "./Services/BrandzparkServices";
 import RecentWorks from "./RecentWorks/RecentWorks";
+import Display from "./Display/Display";
+import OurPartners from "./OurPartners/OurPartners";
+import ContactUs from "./ContactUs/ContactUs";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
     <Logos/>
     <BrandzparkServices/>
 <RecentWorks/>
+<Display/>
+<OurPartners/>
+<ContactUs/>
     </div>
   );
 }

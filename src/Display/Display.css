@@ -1,0 +1,28 @@
+.image-overlay-container {
+    background-color: #000; /* Black background for the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; /* Ensure the container takes up the full viewport height */
+    position: relative; /* Relative positioning for child elements */
+}
+
+.overlay-image {
+    width: 80%; /* Adjust width for responsiveness */
+    max-width: 1000px; /* Limit the max width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position absolute for overlay effect */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+@media (max-width: 768px) {
+    .overlay-image {
+        width: 100%; /* Make the image full width on small screens */
+        top: 50%; /* Re-center vertically */
+        left: 50%; /* Re-center horizontally */
+        transform: translate(-50%, -50%); /* Center the image */
+    }
+}

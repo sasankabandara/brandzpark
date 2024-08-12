@@ -1,3 +1,8 @@
+@font-face {
+    font-family: ElzaTrial-Regular;
+    src: url(../../public/ElzaTrial-Regular.otf);
+  }
+
 html, body {
     height: 100%;
     margin: 0;
