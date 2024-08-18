@@ -1,6 +1,7 @@
 .testimonials-section {
   text-align: center;
   padding: 40px;
+  position: relative; /* Important for gradient positioning */
 }
 
 .testimonials-title {
@@ -8,6 +9,7 @@
   font-size: 2rem;
   margin-bottom: 30px;
   font-family: 'ElzaTrial-Regular', sans-serif;
+  font-weight: bold;
 }
 
 .desktop-carousel {
@@ -18,8 +20,20 @@
   display: none;
 }
 
+@media (max-width: 768px) {
+  .desktop-carousel {
+    display: none;
+  }
+  
+  .mobile-carousel {
+    display: block;
+  }
+}
+
 .slick-slide {
   padding: 10px;
+  position: relative; /* Ensure cards are above the gradient */
+  z-index: 2;
 }
 
 .testimonial-card {
@@ -68,16 +82,40 @@
   height: 40px;
 }
 
+.desktop-carousel::before,
+.desktop-carousel::after,
+.mobile-carousel::before,
+.mobile-carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 750px; /* Adjust width for the gradient effect */
+  z-index: 1; /* Ensure gradient is above the carousel but below the cards */
+  pointer-events: none; /* Allow interactions with carousel items */
+}
+
+.desktop-carousel::before,
+.mobile-carousel::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(15, 15, 15, 1), transparent 95%);
+}
+
+.desktop-carousel::after,
+.mobile-carousel::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(15, 15, 15, 1), transparent 95%);
+}
+
 @media (max-width: 768px) {
-  .desktop-carousel {
-    display: none;
-  }
-  .mobile-carousel {
-    display: block;
-  }
   .mobile-carousel .slick-slide {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  .mobile-carousel::before,
+  .mobile-carousel::after {
+    width: 200px; /* Adjust the gradient width for mobile view */
   }
 }
