@@ -23,7 +23,7 @@ const BrandzparkServices = () => {
             className="me-2"
           />
         </div>
-        <h2>About Brandzpark</h2>
+        <h2>About Brandzpark<span className="asterisk">*</span></h2>
         <p className='Oser'>Our Services</p>
         <p>Brandzpark Pvt Ltd is dedicated to uplifting brands through strategic planning, creative design, and innovative<br/> digital solutions. With years of expertise in building startups, managing businesses and providing services to various<br/> brands, We are committed to helping our clients achieve their branding goals and stand out in the market.</p>
       </div>

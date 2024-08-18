@@ -1,7 +1,6 @@
 .testimonials-section {
   text-align: center;
   padding: 40px;
-  
 }
 
 .testimonials-title {
@@ -11,17 +10,16 @@
   font-family: 'ElzaTrial-Regular', sans-serif;
 }
 
-.testimonials-carousel .slick-prev,
-.testimonials-carousel .slick-next {
-  color: #333;
-  font-size: 24px;
-  z-index: 1;
-  display: none !important;
+.desktop-carousel {
+  display: block;
 }
 
-.testimonials-carousel .slick-dots li button:before {
-  color: #333;
-  font-size: 12px;
+.mobile-carousel {
+  display: none;
+}
+
+.slick-slide {
+  padding: 10px;
 }
 
 .testimonial-card {
@@ -53,7 +51,6 @@
 }
 
 .company {
-  
   font-size: 0.9rem;
   margin: 0;
 }
@@ -61,7 +58,6 @@
 .feedback {
   margin-top: 15px;
   font-size: 0.9rem;
-  
 }
 
 .quotes-img {
@@ -70,4 +66,18 @@
   right: 20px;
   width: 40px;
   height: 40px;
+}
+
+@media (max-width: 768px) {
+  .desktop-carousel {
+    display: none;
+  }
+  .mobile-carousel {
+    display: block;
+  }
+  .mobile-carousel .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

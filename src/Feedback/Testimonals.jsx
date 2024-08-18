@@ -55,48 +55,89 @@ const Testimonials = () => {
     },
   ]);
 
-  const settings = {
+  const desktopSettings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,           // Enable autoplay
-    autoplaySpeed: 3000,      // Set the speed of the autoplay (3 seconds)
-    pauseOnHover: true,       // Pause the animation on hover
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+  };
+
+  const mobileSettingsLTR = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    rtl: false, // Left to right
+  };
+
+  const mobileSettingsRTL = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    rtl: true, // Right to left
   };
 
   return (
     <div className="testimonials-section mt-5">
       <h2 className="testimonials-title">Feedbacks</h2>
-      <Slider {...settings} className="testimonials-carousel">
-        {testimonials.map((testimonial) => (
-          <TestimonialCard
-            key={testimonial.id}
-            image={testimonial.image}
-            name={testimonial.name}
-            company={testimonial.company}
-            text={testimonial.text}
-            quotes={quotes}
-          />
-        ))}
-      </Slider>
+      
+      {/* Desktop Slider */}
+      <div className="desktop-carousel">
+        <Slider {...desktopSettings}>
+          {testimonials.map((testimonial) => (
+            <TestimonialCard
+              key={testimonial.id}
+              image={testimonial.image}
+              name={testimonial.name}
+              company={testimonial.company}
+              text={testimonial.text}
+              quotes={quotes}
+            />
+          ))}
+        </Slider>
+      </div>
+
+      {/* Mobile Sliders */}
+      <div className="mobile-carousel">
+        <Slider {...mobileSettingsLTR}>
+          {testimonials.slice(0, 3).map((testimonial) => (
+            <TestimonialCard
+              key={testimonial.id}
+              image={testimonial.image}
+              name={testimonial.name}
+              company={testimonial.company}
+              text={testimonial.text}
+              quotes={quotes}
+            />
+          ))}
+        </Slider>
+
+        <Slider {...mobileSettingsRTL}>
+          {testimonials.slice(3).map((testimonial) => (
+            <TestimonialCard
+              key={testimonial.id}
+              image={testimonial.image}
+              name={testimonial.name}
+              company={testimonial.company}
+              text={testimonial.text}
+              quotes={quotes}
+            />
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };
