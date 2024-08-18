@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import Slider from "react-slick";
 import TestimonialCard from "../Feedback/TestimonialCard";
 import emily from "../imgs/emily.png";
 import mic from "../imgs/mic.png";
 import sop from "../imgs/sop.png";
 import quotes from "../imgs/99.png"; // Your quotes image
-import "../Feedback/TestimonialCard.css"; // Import CSS for styling
+import "../Feedback/TestimonialCard.css"; // Import your custom CSS
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css"; // Import slick-carousel CSS
 
 const Testimonials = () => {
   const [testimonials] = useState([
@@ -22,21 +25,67 @@ const Testimonials = () => {
       company: "Horizon Media",
       text: "Outstanding service and innovative designs. Exceeded our expectations every step of the way.",
     },
-
     {
-        id: 3,
-        image: sop,
-        name: "Sophia L.",
-        company: "BlueWave Consulting",
-        text: "Professional and attentive team. They brought our vision to life with incredible precision.",
-      },
-    // Add more testimonials as needed
+      id: 3,
+      image: sop,
+      name: "Sophia L.",
+      company: "BlueWave Consulting",
+      text: "Professional and attentive team. They brought our vision to life with incredible precision.",
+    },
+    {
+      id: 4,
+      image: mic,
+      name: "Michael T",
+      company: "Horizon Media",
+      text: "Outstanding service and innovative designs. Exceeded our expectations every step of the way.",
+    },
+    {
+      id: 5,
+      image: mic,
+      name: "Michael T",
+      company: "Horizon Media",
+      text: "Outstanding service and innovative designs. Exceeded our expectations every step of the way.",
+    },
+    {
+      id: 6,
+      image: mic,
+      name: "Michael T",
+      company: "Horizon Media",
+      text: "Outstanding service and innovative designs. Exceeded our expectations every step of the way.",
+    },
   ]);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,           // Enable autoplay
+    autoplaySpeed: 3000,      // Set the speed of the autoplay (3 seconds)
+    pauseOnHover: true,       // Pause the animation on hover
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <div className="testimonials-section mt-5">
       <h2 className="testimonials-title">Feedbacks</h2>
-      <div className="testimonials-container">
+      <Slider {...settings} className="testimonials-carousel">
         {testimonials.map((testimonial) => (
           <TestimonialCard
             key={testimonial.id}
@@ -47,7 +96,7 @@ const Testimonials = () => {
             quotes={quotes}
           />
         ))}
-      </div>
+      </Slider>
     </div>
   );
 };

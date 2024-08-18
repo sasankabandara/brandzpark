@@ -1,18 +1,37 @@
+.testimonials-section {
+  text-align: center;
+  padding: 40px;
+  
+}
+
+.testimonials-title {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: 'ElzaTrial-Regular', sans-serif;
+}
+
+.testimonials-carousel .slick-prev,
+.testimonials-carousel .slick-next {
+  color: #333;
+  font-size: 24px;
+  z-index: 1;
+  display: none !important;
+}
+
+.testimonials-carousel .slick-dots li button:before {
+  color: #333;
+  font-size: 12px;
+}
+
 .testimonial-card {
   background-color: #1f1f1f;
   border-radius: 10px;
   padding: 20px;
   color: #fff;
-  width: 400px; /* Adjust the width of each card */
-  margin: 20px;
-  display: inline-block;
-  vertical-align: top;
+  text-align: left;
+  margin: 0 10px;
   position: relative;
-}
-
-.card-header {
-  display: flex;
-  align-items: center;
 }
 
 .profile-img {
@@ -22,6 +41,11 @@
   margin-right: 15px;
 }
 
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
 .name {
   color: #ff4500;
   font-size: 1.2rem;
@@ -29,7 +53,7 @@
 }
 
 .company {
-  color: #a5a5a5;
+  
   font-size: 0.9rem;
   margin: 0;
 }
@@ -37,35 +61,13 @@
 .feedback {
   margin-top: 15px;
   font-size: 0.9rem;
-  color: #c5c5c5;
+  
 }
 
 .quotes-img {
   position: absolute;
   top: 20px;
-  left: 300px;
-  width: 50px;
-  height: 50px;
-}
-
-.testimonials-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px; /* Space between cards */
-  padding: 20px;
-}
-
-.testimonials-title{
-  text-align: center;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-
-@media (max-width: 768px) {
-  .testimonial-card {
-    width: 100%; /* Full width on mobile */
-    margin: 10px 0;
-  }
+  right: 20px;
+  width: 40px;
+  height: 40px;
 }
