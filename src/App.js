@@ -1,6 +1,6 @@
 
 import Banner from "./Banner/Banner";
-import Feedback from "./Feedback/Feedback";
+import Feedback from "./Feedback/TestimonialCard";
 //import NavBar from "./NavBar/NavBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logos from "./logos/Logos";
@@ -9,6 +9,10 @@ import RecentWorks from "./RecentWorks/RecentWorks";
 import Display from "./Display/Display";
 import OurPartners from "./OurPartners/OurPartners";
 import ContactUs from "./ContactUs/ContactUs";
+import TestimonialCard from "./Feedback/TestimonialCard";
+import "./App.css";
+import Footer from "./Footer/Footer";
+import Testimonials from "./Feedback/Testimonals";
 
 function App() {
   return (
@@ -19,7 +23,9 @@ function App() {
 <RecentWorks/>
 <Display/>
 <OurPartners/>
+<Testimonials />
 <ContactUs/>
+<Footer/>
     </div>
   );
 }

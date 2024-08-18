@@ -11,7 +11,7 @@
 }
 
 .recent-works-container {
-    background-color: #000; /* Black background as per the design */
+   
     padding: 0px; /* Remove any padding */
     margin: 0px; /* Remove any margin */
     width: 67%; /* Adjust width to reduce margin from sides */
@@ -35,7 +35,7 @@
     position: relative;
     transition: transform 0.3s ease; /* Add transition for smooth scaling */
     height: 450px; /* Increased height for all cards */
-    background-color: #333; /* Card background color */
+  
     width: 100%; /* Ensure full width within the column */
 }
 

@@ -44,9 +44,11 @@ const ContactUs = () => {
               <p className="say-hi">Say hi to the team</p>
             </Form>
           </Col>
+          <Col  md={1}> </Col>
 
           {/* Our Story Section */}
-          <Col md={6} className="contact-details contact-details-section">
+          <Col md={5} className="contact-details contact-details-section mt-5">
+          
             <h3 className="story-title">Our Story</h3>
             <p className="story-text">
               Brandzpark is a dynamic advertising and graphic design agency founded in 2019. 
@@ -57,11 +59,11 @@ const ContactUs = () => {
             </p>
             <Row>
               <Col xs={6}>
-                <h4 className="details-title">Opening hours</h4>
+                <h4 className="details-title mt-5">Opening hours</h4>
                 <p className="details-text">Monday - Friday<br />9am - 5pm<br />Weekend Closed</p>
               </Col>
               <Col xs={6}>
-                <h4 className="details-title">Address</h4>
+                <h4 className="details-title mt-5">Address</h4>
                 <p className="details-text">
                   298, 04. Main Road, Sub Road,<br />
                   Building Name, Anuradapura.

@@ -16,11 +16,11 @@ const OurPartners = () => {
   return (
     <div className="partners-container">
       <Container>
-        <h2 className="partners-title">
+        <h2 className="partners-title ">
           Our Partners<span className="asterisk">*</span>
         </h2>
         <Row className="justify-content-center">
-          <Col xs={6} sm={4} md={2} className="partner-col">
+          <Col xs={3} sm={4} md={2} className="partner-col">
             <img src={sundry} alt="Sundry Logo" className="partner-img" />
           </Col>
           <Col xs={6} sm={4} md={2} className="partner-col">

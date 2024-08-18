@@ -23,7 +23,7 @@ const RecentWorks = () => {
   return (
     <div className="page-container">
       <div className="recent-works-container text-light my-5">
-        <div className="text-center mb-4">
+        <div className="text-left mb-4">
           <h2>Recent Works</h2>
         </div>
         <div className="recent-works-row row gx-0">

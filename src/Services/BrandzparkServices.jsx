@@ -14,8 +14,8 @@ import arrow from '../imgs/arrow.png'; // Import the arrow image
 const BrandzparkServices = () => {
   return (
     <div className="brandzpark-container text-light my-5">
-      <div className="brandzpark-header text-center mb-4">
-        <div className="brandzpark-logo mb-2">
+      <div className="brandzpark-header text-center mb-5">
+        <div className="brandzpark-logo mb-5">
           <img
             src="/assets/star.png"
             height="100"
@@ -24,7 +24,7 @@ const BrandzparkServices = () => {
           />
         </div>
         <h2>About Brandzpark</h2>
-        <p>Our Services</p>
+        <p className='Oser'>Our Services</p>
         <p>Brandzpark Pvt Ltd is dedicated to uplifting brands through strategic planning, creative design, and innovative<br/> digital solutions. With years of expertise in building startups, managing businesses and providing services to various<br/> brands, We are committed to helping our clients achieve their branding goals and stand out in the market.</p>
       </div>
       <div className="brandzpark-row row gx-0"> {/* Add gx-0 to remove gutter space */}

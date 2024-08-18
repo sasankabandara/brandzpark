@@ -1,19 +1,22 @@
-@font-face {
-    font-family: ElzaTrial-Regular;
-    src: url(../../public/ElzaTrial-Regular.otf);
-  }
+
 
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #000; /* Black background for the entire page */
+ 
+   font-family: ElzaTrial-Regular;
+    src: url(../../public/ElzaTrial-Regular.otf); 
 }
 
 .brandzpark-container {
-    background-color: #000; /* Black background as per the design */
+ 
     padding: 0; /* Remove any padding */
     margin: 0; /* Remove any margin */
+}
+
+.Oser{
+    font-size: 20px;
 }
 
 .brandzpark-header h2, .brandzpark-header p {
