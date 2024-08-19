@@ -5,28 +5,28 @@
 }
 
 .navbar-nav {
-    flex-direction: row !important;
-    
+  flex-direction: row !important;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column !important;
+    align-items: center; /* Center the nav items in mobile view */
+    text-align: center;  /* Center the text */
+    width: 100%; /* Ensure the nav takes full width */
   }
 
-
-
-  
-  
-  @media (max-width: 991px) {
-    .navbar-nav {
-      flex-direction: column !important;
-      align-items: flex-end;
-    }
-    
-    .navbar-toggler {
-      margin-left: auto;
-    }
-
-    #basic-navbar-nav{
-      position: fixed;
-      top: 5rem;
-      background-color:red;
-        }
+  .navbar-toggler {
+    margin-left: auto;
   }
-  
+
+  #basic-navbar-nav {
+    position: fixed;
+    top: 5rem;
+    left: 0; /* Align navbar to the left edge */
+    width: 100%; /* Full width on mobile view */
+    background-color: red;
+    z-index: 999; /* Ensure it stays on top */
+    padding: 1rem 0; /* Padding for better spacing */
+  }
+}

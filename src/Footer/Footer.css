@@ -80,7 +80,7 @@
 
   .footer-links {
     margin-bottom: 0; /* Remove bottom margin */
-    flex-basis: 30%; /* Make each section take up approximately one-third of the row */
+    flex-basis: 28%; /* Make each section take up approximately one-third of the row */
   }
 
   .footer-links ul {

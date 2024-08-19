@@ -5,7 +5,7 @@ import "../NavBar/nav.css";
 
 const NavBar = () => {
   return (
-    <Navbar expand="lg" className="bg-transparent   ">
+    <Navbar expand="lg" className="bg-transparent">
       <Container className="mt-4">
         <Row className="w-100 align-items-center">
           <Col xs={2} lg={3} className="d-flex justify-content-start align-items-center">
@@ -25,23 +25,23 @@ const NavBar = () => {
               />
             </Navbar.Brand>
           </Col>
-          <Col xs={2} lg={3} className="d-flex justify-content-end align-items-center ">
+          <Col xs={2} lg={3} className="d-flex justify-content-end align-items-center">
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ms-auto flex-column flex-lg-row align-items-lg-center">
-                <Nav.Link href="#about" className="text-white me-sm-5">About</Nav.Link>
-                <Nav.Link href="#work" className="text-white me-5">Work</Nav.Link>
-                <Nav.Link href="#contact" className="text-white me-5">Contact</Nav.Link>
-                <img
-                  src="/assets/rou.png"
-                  height="20"
-                  className="mt-1 me-3 d-none d-lg-inline-block"
-                  alt="Contact"
-                />
-              </Nav>
-            </Navbar.Collapse>
           </Col>
         </Row>
+        <Navbar.Collapse id="basic-navbar-nav" className="w-100">
+          <Nav className="ms-auto flex-column flex-lg-row align-items-lg-center text-center">
+            <Nav.Link href="#about" className="text-white me-lg-5">About</Nav.Link>
+            <Nav.Link href="#work" className="text-white me-lg-5">Work</Nav.Link>
+            <Nav.Link href="#contact" className="text-white me-lg-5">Contact</Nav.Link>
+            <img
+              src="/assets/rou.png"
+              height="20"
+              className="mt-1 me-3 d-none d-lg-inline-block"
+              alt="Contact"
+            />
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
