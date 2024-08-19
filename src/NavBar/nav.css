@@ -4,6 +4,11 @@
   src: url(../../public/ElzaTrial-Regular.otf);
 }
 
+/* Adjust the logo position */
+.logo-container img {
+  padding-left: 350px; /* Shift the logo to the right */
+}
+
 .navbar-nav {
   flex-direction: row !important;
 }
@@ -28,5 +33,9 @@
     background-color: red;
     z-index: 999; /* Ensure it stays on top */
     padding: 1rem 0; /* Padding for better spacing */
+  }
+
+  .logo-container img {
+    padding-left: 0; /* Remove padding on smaller screens */
   }
 }

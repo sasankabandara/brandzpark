@@ -17,7 +17,7 @@ const NavBar = () => {
             />
           </Col>
           <Col xs={8} lg={6} className="d-flex justify-content-center align-items-center">
-            <Navbar.Brand href="#home" className="d-flex align-items-center mx-auto">
+            <Navbar.Brand href="#home" className="d-flex align-items-center mx-auto logo-container">
               <img
                 src="/assets/logo.png"
                 height="30"
@@ -29,7 +29,7 @@ const NavBar = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0" />
           </Col>
         </Row>
-        <Navbar.Collapse id="basic-navbar-nav" className="w-100">
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto flex-column flex-lg-row align-items-lg-center text-center">
             <Nav.Link href="#about" className="text-white me-lg-5">About</Nav.Link>
             <Nav.Link href="#work" className="text-white me-lg-5">Work</Nav.Link>
