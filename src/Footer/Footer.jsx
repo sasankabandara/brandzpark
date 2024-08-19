@@ -31,7 +31,7 @@ const Footer = () => {
               <li><a href="#">Youtube</a></li>
             </ul>
           </div>
-          <div className="col-md-3 footer-links">
+          <div className="col-md-1 footer-links">
             <h5>Contact</h5>
             <ul>
               <li><a href="tel:+9402123124">+94 02123124</a></li>

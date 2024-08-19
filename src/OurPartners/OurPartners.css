@@ -38,3 +38,11 @@
 .partner-img:hover {
   opacity: 1; /* On hover, remove the transparency */
 }
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .partners-title {
+    text-align: center; /* Center the title in mobile view */
+    margin-left: 0; /* Remove the left margin in mobile view */
+  }
+}
