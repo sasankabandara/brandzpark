@@ -9,7 +9,7 @@ import './Logos.css';
 
 const Logos = () => {
   return (
-    <div className="logos-container">
+    <div className="logos-container mt-5">
       <Container>
         <Row className="justify-content-center">
           <Col xs={4} sm={4} md={2} className="logo-col">
