@@ -10,6 +10,10 @@
     align-items: center;
 }
 
+.Rtit{
+    font-weight: bold; 
+}
+
 .recent-works-container {
    
     padding: 0px; /* Remove any padding */
@@ -53,7 +57,7 @@
     color: white; /* Title color */
     margin: 0; /* Remove default margin */
     text-align: left; /* Align title text to the left */
-    font-size: 1rem; /* Adjust font size */
+    font-size: 0.9rem; /* Adjust font size */
     position: relative;
     bottom: 0;
     width: 100%;

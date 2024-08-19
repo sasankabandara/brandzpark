@@ -1,79 +1,101 @@
 .footer {
-    background-color: #000;
-    color: #fff;
-    padding: 40px 0;
-  }
-  
-  .footer-brand {
-    text-align: left;
-  }
-  
-  .footer-logo {
-    max-width: 150px;
-  }
-  
-  .footer-links h5 {
-    color: #ff4500;
-    margin-bottom: 20px;
-    font-size: 1rem;
-  }
-  
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-links ul li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-links ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .footer-links ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #444;
-    padding-top: 20px;
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-    font-size: 0.875rem;
-  }
-  
-  .imag {
-    width: 250px;
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer .container {
+  padding-left: 100px; /* Default padding for desktop */
+}
+
+.footer-brand {
+  text-align: left; /* Default alignment for desktop */
+}
+
+.footer-logo {
+  max-width: 150px;
+}
+
+.footer-links h5 {
+  color: #ff4500;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.imag {
+  width: 250px;
+  margin-left: 45px; /* Default margin for desktop */
+}
+
+/* Responsive Styles for Mobile View */
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+  .footer .container {
+    padding-left: 15px; /* Adjust for smaller screens */
+    padding-right: 15px; /* Add padding-right for smaller screens */
   }
 
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .footer .row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  
-    .footer-brand {
-      flex-basis: 100%;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-  
-    .footer-links {
-      flex-basis: 30%; /* Ensures 3 columns take up equal space */
-      margin-bottom: 20px;
-      text-align: center;
-    }
-  
-    .footer-links ul {
-      padding-left: 0;
-    }
+  .footer-brand {
+    text-align: center; /* Center the logo on mobile */
+    margin-bottom: 20px; /* Add space below the logo on mobile */
   }
-  
+
+  /* New flexbox layout for footer sections */
+  .footer .row {
+    display: flex;
+    justify-content: space-around; /* Align sections next to each other */
+    flex-wrap: wrap; /* Allow sections to wrap to the next line if needed */
+    text-align: center; /* Center text within each section */
+  }
+
+  .footer-links {
+    margin-bottom: 0; /* Remove bottom margin */
+    flex-basis: 30%; /* Make each section take up approximately one-third of the row */
+  }
+
+  .footer-links ul {
+    padding-left: 0; /* Remove padding on the list */
+  }
+
+  .footer-links ul li {
+    margin-bottom: 5px; /* Reduce spacing between list items */
+  }
+
+  .imag {
+    margin: 0 auto; /* Center the logo horizontally on mobile */
+  }
+
+  .footer-bottom {
+    margin-top: 40px; /* Add more space before the bottom section */
+  }
+}

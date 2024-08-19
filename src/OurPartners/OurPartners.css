@@ -10,8 +10,9 @@
   font-size: 2rem; /* Adjust the size as needed */
   margin-bottom: 40px;
   font-family: 'ElzaTrial-Regular', sans-serif; /* Use the custom font */
-  margin-left: 100px; /* Shift the title slightly to the right */
+  margin-left: 145px; /* Shift the title slightly to the right */
   text-align: left ; /* Keep text left-aligned within the container */
+  font-weight: bold; 
 }
 
 .asterisk {

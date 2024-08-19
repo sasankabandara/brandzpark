@@ -19,6 +19,10 @@ html, body {
     font-size: 20px;
 }
 
+.Atit{
+    font-weight: bold; 
+}
+
 .brandzpark-header h2, .brandzpark-header p {
     color: #fff; /* White text color */
 }

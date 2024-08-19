@@ -12,11 +12,11 @@ import invoice from '../imgs/invoice.png';
 
 const RecentWorks = () => {
   const works = [
-    { id: 1, imgSrc: badge, title: 'Badge' },
+    { id: 1, imgSrc: badge, title: 'Bargari' },
     { id: 2, imgSrc: quillPen, title: 'Quill Pen' },
-    { id: 3, imgSrc: nexusCreation1, title: 'Nexus Creations' },
-    { id: 4, imgSrc: plumBoost, title: 'Plum Boost' },
-    { id: 5, imgSrc: nexusCreation2, title: 'Nexus Creations' },
+    { id: 3, imgSrc: nexusCreation1, title: 'NexaCreations' },
+    { id: 4, imgSrc: plumBoost, title: 'Plam therpy' },
+    { id: 5, imgSrc: nexusCreation2, title: 'NexaCreations' },
     { id: 6, imgSrc: invoice, title: 'Invoice' }
   ];
 
@@ -24,7 +24,7 @@ const RecentWorks = () => {
     <div className="page-container">
       <div className="recent-works-container text-light my-5">
         <div className="text-left mb-4">
-          <h2>Recent Works<span className="asterisk">*</span></h2>
+          <h2 className='Rtit'>Recent Works<span className="asterisk">*</span></h2>
         </div>
         <div className="recent-works-row row gx-0">
           {works.map((work) => (
