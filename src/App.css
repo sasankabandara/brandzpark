@@ -3,5 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: rgba(15, 15, 15, 1); /* Black background for the entire page */
-
+  
+    font-family: 'Elzatrial', sans-serif;
+  
 }
