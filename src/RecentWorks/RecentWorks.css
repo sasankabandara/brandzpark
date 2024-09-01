@@ -10,15 +10,14 @@
     align-items: center;
 }
 
-.Rtit{
+.Rtit {
     font-weight: bold; 
 }
 
 .recent-works-container {
-   
     padding: 0px; /* Remove any padding */
     margin: 0px; /* Remove any margin */
-    width: 67%; /* Adjust width to reduce margin from sides */
+    width: 67%; /* Default width for larger screens */
 }
 
 .recent-works-container h2 {
@@ -38,14 +37,13 @@
     overflow: hidden; /* Hide overflow for smooth animations */
     position: relative;
     transition: transform 0.3s ease; /* Add transition for smooth scaling */
-    height: 450px; /* Increased height for all cards */
-  
+    height: 450px; /* Default height for all cards */
     width: 100%; /* Ensure full width within the column */
 }
 
 .recent-works-card .card-img-top {
     width: 100%;
-    height: 350px; /* Increased height for the image */
+    height: 350px; /* Default height for the image */
     object-fit: cover; /* Cover the entire area */
 }
 
@@ -73,22 +71,33 @@
 }
 
 .col-md-6, .col-sm-12 {
-    max-width: 49%; /* Ensure two cards per row */
-    padding: 0 2px; /* Reduce padding to minimize space between columns */
-    margin-bottom: 20px; /* Add margin bottom for spacing */
+    flex: 0 0 48%; /* Default two cards per row */
+    padding: 0 2px; /* Padding between columns */
+    margin-bottom: 20px; /* Margin bottom for spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 @media (max-width: 768px) {
+    .recent-works-container {
+        width: 90%; /* Increase container width on mobile */
+    }
+
     .col-md-6, .col-sm-12 {
-        max-width: 50%; /* Ensure two cards per row even on mobile */
-        height: 175px; /* Adjust card height on mobile */
+        flex: 0 0 48%; /* Keep two cards per row */
+        padding: 0 4px; /* Slightly increase padding for visual separation */
+        margin-bottom: 25px; /* Increase margin bottom for more spacing between rows */
     }
 
     .recent-works-card {
-        height: 350px; /* Adjust height for all cards on mobile */
+        height: 300px; /* Increase card height for mobile */
     }
 
     .recent-works-card .card-img-top {
-        height: 155px; /* Adjust height for the image on mobile */
+        height: 200px; /* Increase image height on mobile */
+    }
+
+    .recent-works-card .card-title {
+        font-size: 1.2rem; /* Increase font size for better readability on mobile */
+        padding-left: 15px; /* Add padding for spacing */
     }
 }

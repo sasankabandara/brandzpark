@@ -13,7 +13,7 @@ import arrow from '../imgs/arrow.png'; // Import the arrow image
 
 const BrandzparkServices = () => {
   return (
-    <div className="brandzpark-container text-light my-5">
+    <div className="brandzpark-container text-light my-5 px-sm-3"> {/* Add px-sm-3 class */}
       <div className="brandzpark-header text-center mb-5">
         <div className="brandzpark-logo mb-5">
           <img
@@ -28,7 +28,7 @@ const BrandzparkServices = () => {
         <p>Brandzpark Pvt Ltd is dedicated to uplifting brands through strategic planning, creative design, and innovative<br/> digital solutions. With years of expertise in building startups, managing businesses and providing services to various<br/> brands, We are committed to helping our clients achieve their branding goals and stand out in the market.</p>
       </div>
       <div className="brandzpark-row row gx-0"> {/* Add gx-0 to remove gutter space */}
-        <div className="col-md-3 col-12 mb-3"> {/* Add col-12 for full width on small screens */}
+        <div className="col-md-3 col-12 "> {/* Add col-12 for full width on small screens */}
           <div className="brandzpark-card card bg-dark text-light h-100">
             <picture>
               <source media="(max-width: 767.98px)" srcSet={brandStrategySmall} />
@@ -41,7 +41,7 @@ const BrandzparkServices = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-3 col-12 mb-3"> {/* Add col-12 for full width on small screens */}
+        <div className="col-md-3 col-12 "> {/* Add col-12 for full width on small screens */}
           <div className="brandzpark-card card bg-dark text-light h-100">
             <picture>
               <source media="(max-width: 767.98px)" srcSet={creativeDesignSmall} />
@@ -54,7 +54,7 @@ const BrandzparkServices = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-3 col-12 mb-3"> {/* Add col-12 for full width on small screens */}
+        <div className="col-md-3 col-12 "> {/* Add col-12 for full width on small screens */}
           <div className="brandzpark-card card bg-dark text-light h-100">
             <picture>
               <source media="(max-width: 767.98px)" srcSet={videoAnimationSmall} />
