@@ -92,7 +92,7 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials-section mt-5">
-      <h2 className="testimonials-title">Feedbacks</h2>
+      <h2 className="testimonials-title">Feedbacks<span className="asterisk">*</span></h2>
       
       {/* Desktop Slider */}
       <div className="desktop-carousel">

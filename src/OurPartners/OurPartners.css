@@ -1,7 +1,7 @@
 .partners-container {
 
   padding: 40px 0;
-  text-align: center;
+  /*text-align: center;*/
   width: 100%; /* Ensure it spans the full width */
 }
 
@@ -9,10 +9,9 @@
   color: #fff;
   font-size: 2rem; /* Adjust the size as needed */
   margin-bottom: 40px;
-  font-family: 'ElzaTrial-Regular', sans-serif; /* Use the custom font */
-  margin-left: 145px; /* Shift the title slightly to the right */
-  text-align: left ; /* Keep text left-aligned within the container */
+  font-family: 'ElzaTrial', sans-serif; /* Use the custom font */
   font-weight: bold; 
+  margin-left: 143px;
 }
 
 .asterisk {

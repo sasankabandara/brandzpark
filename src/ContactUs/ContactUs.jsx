@@ -47,9 +47,9 @@ const ContactUs = () => {
           <Col  md={1}> </Col>
 
           {/* Our Story Section */}
-          <Col md={5} className="contact-details contact-details-section mt-5">
+          <Col md={5} className="contact-details contact-details-section mt-5 mx-auto ">
           
-            <h3 className="story-title">Our Story</h3>
+            <h3 className="story-title ">Our Story</h3>
             <p className="story-text">
               Brandzpark is a dynamic advertising and graphic design agency founded in 2019. 
               With a dedicated team of 15 talented employees, we specialize in creating 

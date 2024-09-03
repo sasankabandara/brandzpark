@@ -32,7 +32,7 @@
 }
 
 .footer-links ul li a {
-  color: #fff;
+  color: #aaa;
   text-decoration: none;
 }
 
@@ -45,6 +45,7 @@
   margin-top: 20px;
   border-top: 1px solid #444;
   padding-top: 20px;
+  color: #aaa;
 }
 
 .footer-bottom p {
@@ -76,19 +77,23 @@
     justify-content: space-around; /* Align sections next to each other */
     flex-wrap: wrap; /* Allow sections to wrap to the next line if needed */
     text-align: center; /* Center text within each section */
+   
   }
 
   .footer-links {
     margin-bottom: 0; /* Remove bottom margin */
     flex-basis: 10%; /* Make each section take up approximately one-third of the row */
+    
   }
 
   .footer-links ul {
     padding-left: 0; /* Remove padding on the list */
+    
   }
 
   .footer-links ul li {
     margin-bottom: 5px; /* Reduce spacing between list items */
+    
   }
 
   .imag {

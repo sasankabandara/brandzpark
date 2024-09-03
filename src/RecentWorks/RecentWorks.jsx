@@ -30,7 +30,7 @@ const RecentWorks = () => {
           {works.map((work) => (
             <div className="col-md-6 col-sm-12 mb-4" key={work.id}>
               <div className="recent-works-card-wrapper">
-                <div className="recent-works-card card bg-dark text-light h-100">
+                <div className="recent-works-card card bg-dark text-light h-100 rounded">
                   <img src={work.imgSrc} className="card-img-top" alt={work.title} />
                   <div className="card-body">
                     <h5 className="card-title">{work.title}</h5>

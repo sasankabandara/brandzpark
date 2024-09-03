@@ -24,7 +24,7 @@ html, body {
     color: #ff4500; /* Bright orange color */
     position: relative;
     top: 10px; /* Adjust this value to move the asterisk down */
-    font-size: 0.8em; /* Make the asterisk slightly smaller */
+    font-size: 0.8rem; /* Make the asterisk slightly smaller */
     margin-left: 2px; /* Add a bit of space between the text and the asterisk */
 }
 

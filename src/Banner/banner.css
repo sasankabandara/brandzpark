@@ -26,7 +26,7 @@
   }
   
   .banner-title {
-    font-family: ElzaTrial-Regular;
+    font-family: 'ElzaTrial', sans-serif;
     font-weight: 400;
     font-size: 6.3rem;
     line-height: 0.9;
@@ -72,12 +72,16 @@
     .banner-title {
       font-size: 3.5rem; /* Adjust font size for small screens */
     }
+    .single-line-mobile {
+      white-space: nowrap;
+      font-size: 1.5rem; /* Adjust this value as needed */
+    }
   }
   
   @media (max-width: 576px) {
     .cont {
       margin-left: 40px;
-      margin-top: -170px; /* Adjust margin for extra small screens */
+      margin-top: -250px; /* Adjust margin for extra small screens */
       text-align: left;
     }
     .banner-title {

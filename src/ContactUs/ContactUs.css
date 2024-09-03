@@ -3,12 +3,12 @@
 
   padding: 60px 0;
   color: #fff;
-  margin-left: 230px;
+  margin-left: 240px;
 }
 
 .contact-title {
   font-size: 2rem;
-  font-family: 'ElzaTrial-Regular', sans-serif;
+  font-family: 'ElzaTrial', sans-serif;
   margin-bottom: 30px;
   font-weight: bold; 
 }
@@ -62,18 +62,21 @@
 .story-title {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  
+  font-family: 'ElzaTrial', sans-serif;
+ color: #aaa;
 }
 
 .story-text {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 40px;
+color: #aaa;
 }
 
 .details-title {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  color: #aaa;
 }
 
 .details-text {

@@ -39,6 +39,7 @@
     transition: transform 0.3s ease; /* Add transition for smooth scaling */
     height: 450px; /* Default height for all cards */
     width: 100%; /* Ensure full width within the column */
+   
 }
 
 .recent-works-card .card-img-top {
@@ -49,6 +50,7 @@
 
 .recent-works-card .card-body {
     padding: 10px 0; /* Adjust padding */
+    background-color: rgba(15, 15, 15, 1);
 }
 
 .recent-works-card .card-title {
