@@ -31,11 +31,11 @@ const Footer = () => {
               <li><a href="#">Youtube</a></li>
             </ul>
           </div>
-          <div className="col-md-1 footer-links">
+          <div className="col-md-3 footer-links">
             <h5>Contact</h5>
             <ul>
               <li><a href="tel:+9402123124">+94 02123124</a></li>
-              <li><a href="tel:0112980012">0112 980012</a></li>
+              <li><a href="tel:0112980012">011 2 980012</a></li>
               <li><a href="mailto:contact@brandzpark.sl">contact@brandzpark.sl</a></li>
             </ul>
           </div>

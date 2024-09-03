@@ -67,7 +67,7 @@ const BrandzparkServices = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-3 col-12 mb-3"> {/* Add col-12 for full width on small screens */}
+        <div className="col-md-3 col-12 "> {/* Add col-12 for full width on small screens */}
           <div className="brandzpark-card card bg-dark text-light h-100">
             <picture>
               <source media="(max-width: 767.98px)" srcSet={digitalSolutionsSmall} />
